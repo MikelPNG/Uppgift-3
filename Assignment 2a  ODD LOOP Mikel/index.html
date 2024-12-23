@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 2a : ODD LOOP Mikel</title>
+  </head>
+  <body>
+    <h1 id="XO"></h1>
+    <script src="javascript.js"></script>
+
+    <script>
+      /* Assignment 2a : ODD LOOP */
+
+      let looping1 = 0;
+      let text1;
+      let array1oxq = [];
+      let a = 1;
+
+      while (looping1 < 10) {
+        if (looping1 % 2) {
+          a = "X";
+          array1oxq.push(a);
+          looping1 + 1;
+          looping1 = looping1 + 1;
+          //console.log("X");
+        } else {
+          a = "O";
+          array1oxq.push(a);
+          looping1 + 1;
+          looping1 = looping1 + 1;
+          //console.log("O");
+        }
+        if (looping1 > 5 && looping1 < 10) {
+          a = "Q";
+          array1oxq.push(a);
+          looping1 + 1;
+          looping1 = looping1 + 1;
+          //console.log("Q");
+        }
+      }
+
+      //console.log(array1oxq);
+
+      text1 = array1oxq.toString();
+
+      //console.log(text1);
+
+      text1 = text1;
+      let newtext1 = text1.replaceAll(",", " ");
+
+      console.log(newtext1);
+    </script>
+
+    <script>
+      /* Assignment 2b : ODDER LOOPS */
+
+      let looping2 = 0;
+      let text2;
+      var array2spaces = [" ", "  ", "   ", "    ", "     "];
+      var array2 = [];
+      while (looping2 < 20) {
+        var randomspace =
+          array2spaces[Math.floor(Math.random() * array2spaces.length)];
+
+        array2.push("O" + randomspace);
+
+        //console.log(randomspace);
+
+        looping2 + 1;
+        looping2 = looping2 + 1;
+      }
+      //console.log(array);
+
+      text2 = array2.toString();
+
+      //console.log(text2);
+
+      text2 = text2;
+      let newtext2 = text2.replaceAll(",", " ");
+
+      console.log(newtext2);
+    </script>
+
+    <script>
+      /* Assignment 2c : LOOPDI-LOOP */
+
+      let cityNames = ["kiruna", "uppsala", "malmo", "gothenburg", "stockholm"];
+
+      for (let looping3 = 0; looping3 < cityNames.length; looping3++) {
+        cityNames[looping3] =
+          cityNames[looping3].charAt(0).toUpperCase() +
+          cityNames[looping3].substr(1);
+        let city = cityNames[looping3];
+        //console.log(city)
+      }
+
+      let text3;
+
+      text3 = cityNames.toString();
+
+      //console.log(text3);
+
+      text3 = text3;
+      let newtext3 = text3.replaceAll(",", "");
+
+      //console.log(newtext3);
+
+      let looping3 = 0;
+      let char3;
+
+      while (looping3 < newtext3.length) {
+        console.log(newtext3[(looping3)]);
+
+        looping3 + 1;
+        looping3 = looping3 + 1;
+      }
+    </script>
+  </body>
+</html>
